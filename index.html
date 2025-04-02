@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand recognition - TensoflowJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="left-image">
+            <div id="left-score"></div>
+        </div>
+        <video id="video" width="640" height="480"></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <div id="right-image">
+            <div id="right-score"></div>
+        </div>
+    </div>
+
+    <!-- tensorflow -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+
+    <!-- hand library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+
+    <!-- fingerpose library -->
+    <script src="fingerpose.js"></script>
+
+    <!-- my libraries -->
+    <script src="constants.js"></script>
+    <script src="webcam.js"></script>
+
+    <!-- main -->
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>

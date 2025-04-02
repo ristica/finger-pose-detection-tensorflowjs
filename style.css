@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #212121;
+    color: #ddd;
+    font-family: 'Segoe UI';
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/***********
+*
+*   video
+*
+************/
+
+#container {
+    position: relative;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#canvas {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 640px;
+    height: 480px;
+    text-align: center;
+}
+
+#video {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 640px;
+    height: 480px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgb(141, 141, 141);
+}
+
+/***********
+*
+*   poses
+*
+************/
+
+#left-image, #right-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#left-image {
+    margin-right: 810px;
+    background-image: url('assets/thumbs_up.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: .15;
+}
+
+#right-image {
+    margin-left: 800px;
+    background-image: url('assets/victory.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: .15;
+}
+
+#left-score, #right-score {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin: -30px 20px 25px 20px;
+}
