@@ -37,6 +37,7 @@ async function drawHands(hands) {
 
         drawJoints(keypoints);
 
+        // gestures
         const GE = new fp.GestureEstimator([
             fp.Gestures.VictoryGesture,
             fp.Gestures.ThumbsUpGesture
